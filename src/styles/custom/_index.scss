@@ -1,0 +1,89 @@
+//
+// Custom
+//
+
+@use 'sass:map';
+
+.scroll-margin {
+	scroll-margin-top: map.get($header, height) + map.get($subheader, height) +
+		map.get($page, padding-y);
+}
+
+.sticky-top-size {
+	top: map.get($header, height) + map.get($subheader, height) + map.get($page, padding-y);
+}
+
+.border-transparent {
+	--#{$prefix}border-opacity: 0;
+}
+
+.compliance-item {
+	margin-left: 20px;
+}
+
+.compliance-icon {
+	margin-right: 10px;
+}
+
+.main-logo {
+	margin-left: 10px;
+}
+
+.blue-card {
+	background-color: #40699E;
+	padding:30px;
+}
+
+.green-card {
+	background-color: $success;
+	padding:30px;
+}
+
+.orange-card {
+	background-color: $warning;
+	padding:30px;
+}
+
+.otis-card-title {
+	color: white;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.card-data-cont {
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+.otis-card-data {
+	color: white;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.po-cont {
+	display: flex;
+	padding: 20px;
+	padding-left: 45px;
+}
+
+.po-cont h3  {
+	font-weight: 600;
+	font-size:18px;
+	margin-left: 10px;
+}
+
+.po-cont h3.po-data {
+	font-weight: 500;
+	font-size:16px;
+	color: gray !important;
+	margin-left: 10px;
+}
+
+.po-title {
+	color: $primary;
+}
+
+.add-line {
+	margin-top: 15px;
+}
